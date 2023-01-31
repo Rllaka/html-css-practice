@@ -73,10 +73,10 @@ body{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(35, 89, 168);
+    background-color: #8ecae6;
 }
 .label  h2{
-    color:white;
+    color:rgb(0, 0, 0);
 }
 table ,th,td{
     border: 2px solid black;
