@@ -30,12 +30,12 @@ body{
     margin: 0;
     padding: 0; */
     overflow: hidden;
-    background-color: #E5EEF5;
+    background-color: #8ecae6;
 }
 .nav  a{
     float: left;
     display: block;
-    color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
     text-align: center;
     padding: 15px 45px;
     text-decoration: none;
