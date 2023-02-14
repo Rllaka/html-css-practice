@@ -1,0 +1,21 @@
+<html>
+<head>
+  <script>
+    function calculateDifference() {
+      var firstName = document.getElementById("firstName").value;
+      var lastName = document.getElementById("lastName").value;
+      var difference = firstName.length - lastName.length;
+      document.getElementById("result").innerHTML = "Difference: " + difference;
+    }
+  </script>
+</head>
+<body>
+  <h1>Pratyush Ranjan Pani</h1>
+  <h2>20BCSB41</h2>
+  <h2>Difference in Character</h2>
+  First Name: <input type="text" id="firstName"><br><br>
+  Last Name: <input type="text" id="lastName"><br><br>
+  <button onclick="calculateDifference()">Calculate Difference</button><br><br>
+  <div id="result"></div>
+</body>
+</html>

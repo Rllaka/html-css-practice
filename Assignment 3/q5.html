@@ -1,0 +1,29 @@
+<html>
+<head>
+  <script>
+    function checkName() {
+      var name = document.getElementById("name").value;
+      var containsDigit = false;
+      for (var i = 0; i < name.length; i++) {
+        if (!isNaN(name[i])) {
+          containsDigit = true;
+          break;
+        }
+      }
+      if (containsDigit) {
+        document.getElementById("result").innerHTML = "The name contains a digit.";
+      } else {
+        document.getElementById("result").innerHTML = "The name does not contain a digit.";
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Pratyush Ranjan Pani</h1>
+  <h2>20BCSB41</h2>
+  <h2>Check Name</h2>
+  Name: <input type="text" id="name"><br><br>
+  <button onclick="checkName()">Check Name</button><br><br>
+  <div id="result"></div>
+</body>
+</html>

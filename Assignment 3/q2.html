@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <script>
+      function checkNumber() {
+        let num = parseInt(document.getElementById("num").value);
+        let result = (num % 2 == 0) ? "even" : "odd";
+        document.getElementById("result").innerHTML = result;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Pratyush Ranjan Pani</h1>
+    <h2>20BCSB41</h2>
+    <h2>Even and Odd</h2>
+    <input type="text" id="num">
+    <button onclick="checkNumber()">Check</button>
+    <p id="result"></p>
+  </body>
+</html>

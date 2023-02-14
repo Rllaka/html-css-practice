@@ -1,0 +1,22 @@
+<html>
+<head>
+  <script>
+    function calculateFactorial() {
+      var number = document.getElementById("number").value;
+      var factorial = 1;
+      for (var i = number; i >= 1; i--) {
+        factorial *= i;
+      }
+      document.getElementById("result").innerHTML = "Factorial: " + factorial;
+    }
+  </script>
+</head>
+<body>
+  <h1>Pratyush Ranjan Pani</h1>
+  <h2>20BCSB41</h2>
+  <h2>Factorial Of Two Numbers</h2>
+  Number: <input type="text" id="number"><br><br>
+  <button onclick="calculateFactorial()">Calculate Factorial</button><br><br>
+  <div id="result"></div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<html>
+<head>
+  <script>
+    function countCharacters() {
+      var name = document.getElementById("name").value;
+      var count = name.length;
+      document.getElementById("result").innerHTML = "Number of characters: " + count;
+    }
+  </script>
+</head>
+<body>
+  Name: <input type="text" id="name"><br><br>
+  <button onclick="countCharacters()">Count Characters</button><br><br>
+  <div id="result"></div>
+</body>
+</html>
