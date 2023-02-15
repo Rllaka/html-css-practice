@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Letter Counter</title>
+    <script>
+      function countLetters() {
+        // Get the user input for the name
+        const name = document.getElementById("name-input").value;
+        
+        // Create an object to hold the letter counts
+        const letterCounts = {};
+        
+        // Loop through the name and count the letters
+        for (let i = 0; i < name.length; i++) {
+          const letter = name[i].toLowerCase();
+          if (letter in letterCounts) {
+            letterCounts[letter]++;
+          } else {
+            letterCounts[letter] = 1;
+          }
+        }
+        
+        // Create an array of the letter counts
+        const countsArray = [];
+        for (const letter in letterCounts) {
+          countsArray.push(letter + ": " + letterCounts[letter]);
+        }
+        
+        // Update the result element with the letter counts
+        document.getElementById("result").innerHTML = countsArray.join(", ");
+      }
+    </script>
+  </head>
+  <body>
+    <label for="name-input">Name:</label>
+    <input type="text" id="name-input"><br>
+    
+    <button onclick="countLetters()">Count Letters</button>
+    
+    <p>Letter counts: <span id="result"></span></p>
+  </body>
+</html>
