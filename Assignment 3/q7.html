@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <header> <h3>Pratyush Ranjan Pani<br>20BCSB41</h3> </header>
+</head>
+<body>
+<div>
+  <h1><u> Logarithmic calculator</u> </h1>
+  <label for="inputBox">Enter a number: </label>
+  <input type="number" id="input1">
+  <br>
+  <label for="input">Enter the base:</label>
+  <input type="number" id="input11">
+  <br>
+  <button onclick="calculate()">Calculate</button>
+</div>
+<div>
+  <p id="outputBox"></p>
+</div>
+</body>
+<script>
+  function calculate() {
+    let input = document.getElementById("input1").value;
+    let input1 = document.getElementById("input11").value;
+    let output = Math.log(input);
+    let ot1=Math.log(input1);
+    let res1=output/ot1;
+    document.getElementById("outputBox").innerHTML = "The logarithm of "+input+" is "+ res1;
+  }
+</script>
+</html>

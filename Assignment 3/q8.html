@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    #myProgress {
+      width: 100%;
+      background-color: #ddd;
+    }
+    
+    #myBar1 {
+      width: 1%;
+      height: 30px;
+      background-color: #04D9FF;
+      text-align:center;
+      color:white;
+    }
+    #myBar2 {
+      width: 1%;
+      height: 30px;
+      background-color: #04D9FF;
+      text-align:center;
+      color:white;
+      /* font-weight:20%;*/
+    }
+    #myBar3 {
+      width: 1%;
+      height: 30px;
+      background-color: #04D9FF;
+      text-align:center;
+      color:white;
+    }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <header> <h3>Pratyush Ranjan Pani<br>20BCSB41</h3> </header>
+</head>
+<body>
+<div>
+  <h1><u> Progress Bar Chart</u> </h1>
+  <div>
+    <h2>B.tech</h2>
+  <!-- <label for="input">Enter a number: </label> -->
+  <input type="number" id="b.tech" name="b.tech" placeholder="Enter your cgpa">
+</div>
+  <br>
+  <!-- <label for="input">Enter the base:</label> -->
+  <div>
+    <h2>Intermediate XII</h2>
+  <input type="number" id="XII" name="XII" placeholder="Enter your percentage" >
+  </div>
+  <br>
+  <div>
+    <h2>Secondary X</h2>
+  <input type="number" id="X" name="X" placeholder="Enter your percentage">
+  </div>
+  <br>
+  <button onclick="move1();move2();move3()">Display</button>
+</div>
+<!-- <div>
+  <p id="myBar1"></p>
+  <br>
+  <p id="myBar2"></p>
+  <br>
+  <p id="myBar3"></p>
+  <br>
+</div> --->
+<div id="myProgress">
+  <div id="myBar1"></div>
+</div>
+<br>
+<div id="myProgress">
+  <div id="myBar2"></div>
+</div>
+<br>
+<div id="myProgress">
+  <div id="myBar3"></div>
+</div>
+<br>
+</body>
+<script>
+  var i = 0;
+  var j=0;
+  var k=0;
+  function move1() {
+    if (i == 0) {
+      i = 1;
+      var elem = document.getElementById("myBar1");
+      var v=document.getElementById("b.tech").value;
+      v=v*10;
+      var width = 1;
+      var id = setInterval(frame, 10);
+      function frame() {
+        if (width >= v) {
+          clearInterval(id);
+          i = 0;
+        } else {
+          width++;
+          elem.style.width = width + "%";
+          elem.innerHTML = width  + "%";
+        }
+      }
+    }
+  }
+  function move2() {
+    if (j == 0) {
+      j = 1;
+      var elem = document.getElementById("myBar2");
+      var v=document.getElementById("XII").value;
+      var width = 1;
+      var id = setInterval(frame, 10);
+      function frame() {
+        if (width >= v) {
+          clearInterval(id);
+          j = 0;
+        } else {
+          width++;
+          elem.style.width = width + "%";
+          elem.innerHTML = width  + "%";
+        }
+      }
+    }
+  }
+  function move3() {
+    if (k == 0) {
+       k= 1;
+      var elem = document.getElementById("myBar3");
+      var v=document.getElementById("X").value;
+      var width = 1;
+      var id = setInterval(frame, 10);
+      function frame() {
+        if (width >= v) {
+          clearInterval(id);
+          k = 0;
+        } else {
+          width++;
+          elem.style.width = width + "%";
+          elem.innerHTML = width  + "%";
+        }
+      }
+    }
+  }
+</script>
+</html>
