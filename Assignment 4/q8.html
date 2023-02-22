@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="font-family: cursive;">Max occuring substring</h1>
+    <h2 style="font-family: cursive;" >Pratyush Ranjan Pani</h2> 
+    <h2>20BCSB41</h2>
+    <input type="text" placeholder="enter your name" id="name">
+    <button onclick="max()">maxsubstring</button>
+    <p id="res"></p>
+    <script>
+        function max() {
+    string = document.getElementById("name").value
+    let freqDict = {};
+    let n = string.length;
+
+    for (let i = 0; i < n; i++) {
+        for (let j = i + 1; j <= n; j++) {
+            let substring = string.substring(i, j);
+
+
+            if (substring in freqDict) {
+                freqDict[substring]++;
+            } else {
+                freqDict[substring] = 1;
+            }
+        }
+    }
+
+
+    let maxFreq = 0;
+    let maxSubstring = '';
+    for (let substring in freqDict) {
+        if (freqDict[substring] > maxFreq) {
+            maxFreq = freqDict[substring];
+            maxSubstring = substring;
+        }
+    }
+
+    document.getElementById("res").innerHTML = "<b>Maximum occurring substring is : " + maxSubstring + "<b>";
+}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="font-family: cursive;">Password word of your name</h1>
+    <h2 style="font-family: cursive;" >Pratyush Ranjan Pani</h2> 
+    <h2>20BCSB41</h2>
+    <input type="text" placeholder="Enter your name" id="name">
+    <input type="text" placeholder="Enter your number" id="number">
+    <button onclick="password()">Generate password</button>
+    <p id="pass"></p>
+</body>
+<script>
+    function password(){
+        var name=document.getElementById("name").value;
+        var number=document.getElementById("number").value;
+        text1=name.slice(0,4);
+        text2=number.slice(-3);
+        text1=text1+"#"+text2;
+        document.getElementById("pass").innerHTML="Password generated is: "+text1;
+    }
+</script>
+</html>

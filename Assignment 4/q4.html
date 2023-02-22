@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <h1 style="font-family: cursive;"> Letter Counter</h1>
+    <h2 style="font-family: cursive;" >Pratyush Ranjan Pani</h2> 
+    <h2>20BCSB41</h2>
+    <script>
+      function countLetters() {
+        const name = document.getElementById("name-input").value;
+        
+      
+        const letterCounts = {};
+        
+        for (let i = 0; i < name.length; i++) {
+          const letter = name[i].toLowerCase();
+          if (letter in letterCounts) {
+            letterCounts[letter]++;
+          } else {
+            letterCounts[letter] = 1;
+          }
+        }
+        
+        const countsArray = [];
+        for (const letter in letterCounts) {
+          
+          countsArray.push(letter + ": " + letterCounts[letter]);
+        }
+        
+        document.getElementById("result").innerHTML = countsArray.join(", ");
+      }
+    </script>
+  </head>
+  <body>
+    <label for="name-input">Name:</label>
+    <input type="text" id="name-input"><br>
+    
+    <button onclick="countLetters()">Count Letters</button>
+    
+    <p>Letter counts: <span id="result"></span></p>
+  </body>
+</html>

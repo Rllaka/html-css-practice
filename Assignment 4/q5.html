@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="font-family: cursive;">All possible words</h1>
+    <h2 style="font-family: cursive;" >Pratyush Ranjan Pani</h2> 
+    <h2>20BCSB41</h2>
+    <input type="text" placeholder="enter your name" id="name">
+    <button onclick="words()">words</button>
+    <p id="res"></p>
+    <script>
+        function words() {
+    st = String(document.getElementById("name").value)
+    result = document.getElementById("res")
+
+    const stringPermutations = str => {
+        if (str.length <= 2) return str.length === 2 ? [str, str[1] + str[0]] : [str];
+        return str
+            .split('')
+            .reduce(
+                (acc, letter, i) =>
+                    acc.concat(stringPermutations(str.slice(0, i) + str.slice(i + 1)).map(val => letter + val)),
+                []
+            );
+    };
+    res = stringPermutations(st)
+    let c = [];
+    let d = [];
+    let real = [];
+    for(i = 0 ;i < st.length; i++){
+        if (st[i].includes('a') || st[i].includes('e') || st[i].includes('i') || st[i].includes('o') || st[i].includes('u')){
+            c.push(i)
+        };
+    };
+
+    for(i = 0 ;i < res.length; i++){
+        d.push(res[i]);
+        for(j=0;j<c.length;j++){
+            if(res[i][c[j]]!=st[c[j]]){
+                console.log(d)
+                d.pop()
+                break
+            }
+        }
+    };
+
+    
+    
+
+    console.log(d)
+
+    result.innerHTML = d.toString()
+
+}
+
+
+
+    </script>
+</body>
+</html>

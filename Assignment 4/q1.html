@@ -1,0 +1,158 @@
+<html>
+  <h1 style="font-family: cursive;">Codename Generator</h1>
+
+    <input type="text" id="name" placeholder="  Enter your name">
+    <input class="submit" type="submit" onclick="code()">
+    
+    <p id="result1">
+
+    </p>
+<body>
+    <h2 style="font-family: cursive;" >Pratyush Ranjan Pani</h2> 
+    <h2>20BCSB41</h2>
+<script>
+  function code() {
+  nm = document.getElementById("name").value
+  var temp
+  result = ""
+
+  // a="4",b="g",c="r",d="s" , e="3", f="k", g="9", h="f" ,i="5", j="j", k="n", l="q", m="a", n="s", o="0", p="1" ,q="w", r="e", s="u", t="m",u="p",v="h", w="k", x="l",y="q", z="i"
+
+  for (let i = 0; i < nm.length; i++) {
+      if (nm.charAt(i) == "a") {
+          temp = "4"
+          result = result.concat(temp)
+      }
+      else if (nm.charAt(i) == "b") {
+          temp = "g"
+          result = result.concat(temp)
+
+      }
+      else if (nm.charAt(i) == "c") {
+          temp = "r"
+          result = result.concat(temp)
+
+      }
+      else if (nm.charAt(i) == "d") {
+          temp = "s"
+          result = result.concat(temp)
+
+      }
+      else if (nm.charAt(i) == "e") {
+          temp = "3"
+          result = result.concat(temp)
+
+      }
+      else if (nm.charAt(i) == "f") {
+          temp = "k"
+          result = result.concat(temp)
+
+      }
+      else if (nm.charAt(i) == "g") {
+          temp = "q"
+          result = result.concat(temp)
+
+      }
+      else if (nm.charAt(i) == "h") {
+          temp = "f"
+          result = result.concat(temp)
+
+      }
+      else if (nm.charAt(i) == "i") {
+          temp = "9"
+          result = result.concat(temp)
+
+      }
+      else if (nm.charAt(i) == "j") {
+          temp = "j"
+          result = result.concat(temp)
+
+      }
+      else if (nm.charAt(i) == "k") {
+          temp = "n"
+          result = result.concat(temp)
+
+      }
+      else if (nm.charAt(i) == "l") {
+          temp = "q"
+          result = result.concat(temp)
+
+      }
+      else if (nm.charAt(i) == "m") {
+          temp = "a"
+          result = result.concat(temp)
+
+      }
+      else if (nm.charAt(i) == "n") {
+          temp = "s"
+          result = result.concat(temp)
+
+      }
+      else if (nm.charAt(i) == "o") {
+          temp = "0"
+          result = result.concat(temp)
+
+      }
+      else if (nm.charAt(i) == "p") {
+          temp = "1"
+          result = result.concat(temp)
+
+      }
+      else if (nm.charAt(i) == "q") {
+          temp = "w"
+          result = result.concat(temp)
+
+      }
+      else if (nm.charAt(i) == "r") {
+          temp = "e"
+          result = result.concat(temp)
+
+      }
+      else if (nm.charAt(i) == "s") {
+          temp = "u"
+          result = result.concat(temp)
+
+      }
+      else if (nm.charAt(i) == "t") {
+          temp = "m"
+          result = result.concat(temp)
+
+      }
+      else if (nm.charAt(i) == "u") {
+          temp = "p"
+          result = result.concat(temp)
+
+      }
+      else if (nm.charAt(i) == "v") {
+          temp = "h"
+          result = result.concat(temp)
+
+      }
+      else if (nm.charAt(i) == "w") {
+          temp = "k"
+          result = result.concat(temp)
+
+      }
+      else if (nm.charAt(i) == "x") {
+          temp = "1"
+          result = result.concat(temp)
+
+      }
+      else if (nm.charAt(i) == "y") {
+          temp = "q"
+          result = result.concat(temp)
+
+      }
+      else if (nm.charAt(i) == "z") {
+          temp = "i"
+          result = result.concat(temp)
+
+      }
+
+  }
+  document.getElementById("result1").innerHTML = "<b>Code name: <b>" + result;
+
+}
+</script>
+</body>
+</html>

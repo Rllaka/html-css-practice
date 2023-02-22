@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="font-family: cursive;" >swapping</h1>
+    <h2 style="font-family: cursive;" >Pratyush Ranjan Pani</h2> 
+    <h2>20BCSB41</h2>
+    <input type="text" placeholder="enter your name" id="name">
+    <button onclick="swap()">swapping</button>
+    <p id="res"></p>
+</body>
+<script>
+    function reverse(s) {
+    return s.split("").reverse().join("");
+}
+function swap() {
+    string2 = document.getElementById("name").value
+    // document.getElementById("result9").innerhtml = "new string is : " +string2
+    sf = ""
+    lt = ""
+    for (let i = 0; i < 2; i++) {
+        sf = sf.concat(string2.charAt(i))
+    }
+    for (let i = string2.length - 1; i >= string2.length - 2; i--) {
+        lt = lt.concat(string2.charAt(i))
+
+    }
+    lt = reverse(lt)
+    temp = lt
+    result = string2.replace(sf, temp)
+    tempo = result.slice(0, result.length - 2)
+    tempo = tempo.concat(sf)
+
+
+
+    document.getElementById("res").innerHTML = "<b>Code name: <b>" + tempo;
+}
+</script>
+</html>
