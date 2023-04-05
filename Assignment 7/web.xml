@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>hello</display-name>
+  
+ <context-param>
+ <param-name>Country</param-name>
+ <param-value>Bhubaneswar,Odisha , India</param-value>
+ </context-param>
+ 
+ <context-param>
+ <param-name>Dist</param-name>
+ <param-value>Dhenkanal,Odisha , India</param-value>
+ </context-param>
+ 
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
+-->
+
+
+<Users>
+    <User>
+        <id>1</id>
+        <Name>kakashi</Name>
+        <Age>22</Age>
+        <Address>India</Address>
+    </User>
+    <User>
+        <id>2</id>
+        <Name>Johnsmith</Name>
+        <Age>25</Age>
+        <Address>New York</Address>
+    </User>
+    <User>
+        <id>3</id>
+        <Name>reddy</Name>
+        <Age>35</Age>
+        <Address>Chicago</Address>
+    </User>
+    <User>
+        <id>4</id>
+        <Name>hanzo</Name>
+        <Age>40</Age>
+        <Address>Hong Kong</Address>
+    </User>
+    <User>
+        <id>5</id>
+        <Name>aludam</Name>
+        <Age>45</Age>
+        <Address>Phoenix</Address>
+    </User>
+    <User>
+        <id>6</id>
+        <Name>adddu</Name>
+        <Age>50</Age>
+        <Address>USA</Address>
+    </User>
+    <User>
+        <id>7</id>
+        <Name>mosam</Name>
+        <Age>55</Age>
+        <Address>Australia</Address>
+    </User>
+    <User>
+        <id>8</id>
+        <Name>roysia</Name>
+        <Age>60</Age>
+        <Address>San Jose</Address>
+    </User>
+    <User>
+        <id>9</id>
+        <Name>barika gopinath</Name>
+        <Age>65</Age>
+        <Address>West Indies</Address>
+    </User>
+    <User>
+        <id>10</id>
+        <Name>kumar</Name>
+        <Age>70</Age>
+        <Address>Russia</Address>
+    </User>
+</Users>
